@@ -10,7 +10,6 @@ import Dashboard from "./Pages/Dashboard";
 import { AuthProvider } from "./Context/auth";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import RequireAuth from "./Components/RequireAuth";
-import ErrorBoundary from "./Components/ErrorBoundary";
 
 function App() {
   return (

@@ -17,6 +17,7 @@ body {
   display: flex;
   align-items: center;
   height: 70px;
+  width: 100vw;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -131,7 +132,6 @@ width: 200px;
   margin-bottom: 30px;
 }
 .contact input, .contact textarea{
-  width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
   border: 1px solid #ddd;

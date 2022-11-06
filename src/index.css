@@ -5,7 +5,10 @@
   margin: 0;
   font-family: 'Noto Sans', sans-serif; 
   color: black;
-  overflow: hidden;
+}
+body {
+  width: 100vw;
+
 }
 
 /* Nav section */
@@ -13,7 +16,6 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  width: 100%;
   height: 70px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
@@ -36,7 +38,6 @@
 /* Hero Section */
 .content {
   background-color: #f7efe9;
-  width: 100%;
   height: 400px;
   margin: auto;
   padding: 20px;
@@ -50,7 +51,7 @@ align-items: center;
   font-weight: 500;
   line-height: 72px;
   margin-bottom: 20px;
-  width: 900px;
+  padding: 20px;
   text-align: center;
 
 }
@@ -69,7 +70,7 @@ width: 200px;
     color: white;
     font-size: 15px;
    margin-top: 20px;
-   margin-left: 320px;
+   margin-left: 500px;
 }
 
 /* About Section */
@@ -78,16 +79,13 @@ width: 200px;
   font-weight: 500;
   line-height: 72px;
   margin-bottom: 20px;
-  width: 900px;
   text-align: center;
-  padding-left: 200px;
 }
 
 .about p{
   font-size: 20px;
     text-align: center;
     font-weight: 500;
-    padding-right: 40px;
 }
 
 /* Dashboard Section */
@@ -97,7 +95,6 @@ width: 200px;
   font-weight: 500;
   line-height: 72px;
   margin-bottom: 20px;
-  width: 900px;
   text-align: center;
 }
 
@@ -168,7 +165,6 @@ width: 200px;
   margin-bottom: 30px;
 }
 .login input {
-  width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
@@ -189,7 +185,6 @@ width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
@@ -203,7 +198,6 @@ width: 200px;
   margin-bottom: 30px;
 }
 .signup input {
-  width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
@@ -226,7 +220,6 @@ width: 200px;
   font-weight: 500;
   line-height: 72px;
   margin-bottom: 20px;
-  width: 900px;
   text-align: center;
 }
 

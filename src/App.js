@@ -7,9 +7,11 @@ import Login from "./Pages/Login";
 import Error404 from "./Components/Error404";
 import Signup from "./Pages/Signup";
 import Dashboard from "./Pages/Dashboard";
+import Counter from "./Pages/Counter";
 import { AuthProvider } from "./Context/auth";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import RequireAuth from "./Components/RequireAuth";
+import ErrorBoundary from "./Components/ErrorBoundary";
 
 function App() {
   return (
@@ -46,6 +48,11 @@ function App() {
             </Route>
             <Route path="/signup">
               <Signup />
+              </Route>
+            <Route path="/counter">
+              <ErrorBoundary>
+              <Counter />
+              </ErrorBoundary>
             </Route>
             <Route path="*">
               <Error404 />

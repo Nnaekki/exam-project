@@ -76,7 +76,7 @@ width: 200px;
    margin-top: 20px;
    text-align: center;
    align-items: center;
-   margin-left: 40%;
+   margin-left: 42%;
 }
 
 /* About Section */
@@ -111,15 +111,16 @@ width: 200px;
 }
 
 .btn2 {
-  width: 200px;
+  width: 100px;
       height: 40px;
       background: black;
       border: 2px solid black;
       color: white;
       font-size: 15px;
      margin-top: 20px;
-     margin-left: 350px;
+     margin-left: 130px;
   }
+
 
 /* Contact Section */
 .contact {

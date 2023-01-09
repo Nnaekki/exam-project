@@ -1,28 +1,29 @@
 import { Component } from "react";
 
 class ErrorBoundary extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      hasError: false
-    }
-  }
+  state = {
+    errorMessage: '',
+  };
 
   static getDerivedStateFromError(error) {
-    return {
-      hasError: true
-    }
-  }
-  componentDidCatch(error, errorInfo) {
-    console.log({ error, errorInfo });
+    return { errorMessage: error.toString() };
   }
 
+  componentDidCatch(error, info) {
+    this.logErrorToServices(error.toString(), info.componentStack);
+  }
+
+  logErrorToServices = console.log;
+
   render() {
-    if (this.state.hasError) {
-      return <h1 className="center">Something went wrong </h1>
+    if (this.state.errorMessage) {
+      return (
+        <p>
+          {this.state.errorMessage}
+        </p>
+      )
     }
-      return this.props.children
+    return this.props.children
   }
 }
 

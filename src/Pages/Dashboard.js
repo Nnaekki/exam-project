@@ -1,4 +1,4 @@
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { useAuth } from "../Context/auth";
 import { Helmet } from "react-helmet";
 
@@ -9,7 +9,7 @@ const Dashboard = () => {
           name="description"
           content="Your private profile page"
         />
-      </Helmet>
+      </Helmet>    
   const auth = useAuth ();
   const history = useHistory();
   const handleLogout = () => {
@@ -17,15 +17,21 @@ const Dashboard = () => {
     history.push ("/login");
 
   }
+  
     return ( 
         <div className="dashboard">
             <h2>Dashboard</h2>
             <p> Welcome {auth.user} to your dashboard</p>
+            <br />
+          <p><Link to ="/counter">Simple Counter Showing Error Boundary</Link></p>
       <button className="btn2" onClick={handleLogout}>
         Log Out
       </button>
         </div>
+        
      );
+
+     
 }
  
 export default Dashboard;

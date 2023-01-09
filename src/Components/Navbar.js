@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import ErrorBoundary from "./ErrorBoundary";
 const Navbar = () => {
     return ( 
         <nav className="navbar">
@@ -22,14 +21,11 @@ const Navbar = () => {
                     color: "white",
                     backgroundColor: "black"
                 }}>Dashboard</Link>
-                <ErrorBoundary>
-                <Link to="/login" style={{
+                <Link to="/signup" style={{
                     color:"white",
                     backgroundColor: "black",
-                }}>Log In</Link>
-                </ErrorBoundary>
+                }}>Sign Up</Link>
             </div>
-
         </nav>
      );
 }
